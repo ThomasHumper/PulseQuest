@@ -1,0 +1,22 @@
+ThisBuild / scalaVersion := "3.3.6"
+
+libraryDependencies ++= Seq(
+  "dev.zio" %% "zio" % "2.1.20",
+  "dev.zio" %% "zio-http" % "3.3.0",
+  "dev.zio" %% "zio-json" % "0.7.44"
+)
+
+{:deps
+ {org.clojure/clojure {:mvn/version "1.12.0"}
+
+  ring/ring-core
+  {:mvn/version "1.12.2"}
+
+  ring/ring-jetty-adapter
+  {:mvn/version "1.12.2"}
+
+  metosin/reitit
+  {:mvn/version "0.7.2"}
+
+  cheshire/cheshire
+  {:mvn/version "5.13.0"}}}
