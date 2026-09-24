@@ -1,5 +1,19 @@
-package pulsequest
+POST /api/users/1/quests/1/complete
 
+Start the server:
+clojure -M -m pulsequest.core
+
+Get all quests:
+curl http://localhost:8080/api/quests
+
+Get a player:
+curl http://localhost:8080/api/users/1
+
+Complete a quest:
+curl -X POST \
+  http://localhost:8080/api/users/1/quests/1/complete
+
+The response will contain:
 {
   "user": {
     "id": 1,
@@ -12,12 +26,14 @@ package pulsequest
     "id": 1,
     "title": "Morning Warrior",
     "description": "Complete your morning routine.",
-    "xpReward": 50,
+    "xp-reward": 50,
     "completed": true
   },
-  "xpEarned": 50,
-  "levelUp": false
+  "xp-earned": 50,
+  "level-up": false
 }
+
+package pulsequest
 
 import zio.*
 import zio.http.*
