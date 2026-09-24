@@ -2,6 +2,8 @@
 
 > **Turn everyday life into a game.**
 
+[Thumbnail](/assets/thumbnail.png)
+
 PulseQuest is a gamified productivity platform that transforms personal goals, habits, and learning into engaging quests.
 
 Instead of staring at a boring checklist, users complete challenges, earn XP, level up, unlock achievements, and build their own evolving virtual world.
