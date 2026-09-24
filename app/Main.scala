@@ -1,5 +1,24 @@
 package pulsequest
 
+{
+  "user": {
+    "id": 1,
+    "username": "player1",
+    "email": "player@example.com",
+    "xp": 50,
+    "level": 1
+  },
+  "quest": {
+    "id": 1,
+    "title": "Morning Warrior",
+    "description": "Complete your morning routine.",
+    "xpReward": 50,
+    "completed": true
+  },
+  "xpEarned": 50,
+  "levelUp": false
+}
+
 import zio.*
 import zio.http.*
 import zio.json.*
